@@ -1,0 +1,21 @@
+{% extends 'basetemp.html' %}
+
+{%block content%}
+
+<h1> Login </h1>
+<!-- this below given action attribute is for post request. When we hit submit button the data goes to this url below. -->
+<form class="site-form" action="{% url 'accounts:login' %}" method="post">
+	{% csrf_token %}
+	<!-- this below tag shows the form taken from views -->
+	{{ form }} 
+
+	<!-- We can check does the next properity(perameter) does that appear in the url any where. -->
+
+	{% if request.GET.next %}
+		<input type="hidden" name="next" value="{{ request.GET.next}}">
+	{% endif %}
+
+	<input type="submit" value="Login">
+	
+</form>
+{% endblock %} 

@@ -1,0 +1,14 @@
+django project blog website notes
+
+1) ORM commands
+
+
+from Page.models import Page
+
+Page.save()
+
+Page.objects.all()
+
+Page.title
+
+Page.objects.all()[0].title

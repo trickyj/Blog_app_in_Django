@@ -1,0 +1,20 @@
+{% extends 'basetemp.html'%}
+
+{%block content%}
+
+<h1> Welcome to Articles_list app </h1>
+
+<div class="articles">
+{% for article in Article %}
+	<div class="article">
+		<h2><a href="#">{{Articles.title}} </a></h2>
+		
+		<!-- <h2><a href="{% url 'article:detail' slug=Articles.slug%}">{{Articles.title}} </a></h2> -->	
+		
+		<p>{{Articles.snippet}}</p>
+		<p>{{Articles.date}} </p>
+	</div>
+{%endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'basetemp.html' %}
+
+{%block content%}
+
+<div class="article-detail">
+
+<div class="article">
+
+<img src="{{Articles.thumb.url}}"/>
+
+<h2>{{Articles.title}}</h2>
+
+<p> {{Articles.body}}</p>
+
+
+<p> {{Articles.date}}</p>
+
+</div>
+</div>
+	
+{% endblock %}

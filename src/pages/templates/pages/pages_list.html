@@ -1,0 +1,20 @@
+{% extends 'basetemp.html' %}
+
+{% block content %}
+<h1> My Pages </h1>
+	<div class="pages">
+
+	{% for Page in allpages %} 
+		
+		<div class="page">
+			<h2><a href="{% url 'pages:page_detail' slug=Page.slug %}">{{ Page.title }}</a></h2>
+			<p>{{ Page.snippet }}</p>
+			<p>{{ Page.date }}</p>
+			<p class="author">added by {{ Page.author.username }}</p>	
+		</div>
+
+	{% endfor %}
+
+	</div>
+
+{% endblock %}

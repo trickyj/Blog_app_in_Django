@@ -1,0 +1,13 @@
+{% extends 'basetemp.html' %}
+
+{%block content%}
+
+<h1> sign up </h1>
+<!-- this below given action attribute is for post request. When we hit submit button the data goes to this url below. -->
+<form class="site-form" action="/accounts/signup/" method="post">
+	{% csrf_token %}
+	<!-- this below tag shows the form taken from views -->
+	{{ form }} 
+	<input type="submit" value="submit">
+</form>
+{% endblock %} 

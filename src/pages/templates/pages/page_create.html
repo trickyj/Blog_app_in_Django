@@ -1,0 +1,17 @@
+{% extends 'basetemp.html' %}
+
+{%block content%}
+
+<div class="create-article">
+	<h2>Create an Awesome new article</h2>
+	<form class="site-form" action="{% url 'pages:create'%}" method="post" enctype="multipart/form-data">
+		<!-- this below form is keyname from views.py -->
+		{% csrf_token %}
+		{{ form }}
+		<input type="submit" value="create">
+	</form>
+
+</div>
+<script src="/static/slugify.js"></script>
+
+{% endblock %} 

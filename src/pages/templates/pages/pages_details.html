@@ -1,0 +1,15 @@
+{% extends 'basetemp.html' %}
+{% block content %}
+
+<div class="page-detail">
+	<div class="page">
+		<!-- This mypage is taken from views  -->
+			<img src="{{ mypage.thumb.url }}"/>
+		<!-- the page object is taken from views.py file which is mypage -->
+				<h2>{{mypage.title }}</h2>
+				<p>{{mypage.body }}</p>
+				<p>{{mypage.date}}</p>
+	</div>	
+</div>
+
+{% endblock %}
