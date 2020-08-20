@@ -1,4 +1,4 @@
-#!/Volumes/TrickyJ/My_Projects/Web_Development/python_study/bin/python3
+#!/Volumes/My_Personal/Programming/Python_All/python_study/bin/python
 from django.core import management
 
 if __name__ == "__main__":

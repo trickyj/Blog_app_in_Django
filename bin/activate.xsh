@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/Volumes/TrickyJ/My_Projects/Web_Development/python_study"
+$VIRTUAL_ENV = r"/Volumes/My_Personal/Programming/Python_All/python_study"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

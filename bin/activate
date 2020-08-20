@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Volumes/TrickyJ/My_Projects/Web_Development/python_study"
+VIRTUAL_ENV='/Volumes/My_Personal/Programming/Python_All/python_study'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
