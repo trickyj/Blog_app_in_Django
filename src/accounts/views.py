@@ -1,10 +1,10 @@
-from django.shortcuts import render,redirect
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.shortcuts import render,redirect 
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm  
 from django.contrib.auth import login, logout
 # Create your views here.
 
 def signup_view(request):
-	#1) if its post request, then take the data from the user and validate it.
+	#1) if its post request, then take the data from the us    er and validate it.
 	if request.method =='POST':
 	#we are passing in all the data into a new instance under usercreationform below.
 		form = UserCreationForm(request.POST)
